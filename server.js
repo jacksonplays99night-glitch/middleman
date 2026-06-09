@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-const API_KEY = 'd4e8f1a2b3c9d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0';
+const API_KEY = '25252525252525252525';
 const pendingCommands = [];
 
 app.post('/discord-to-roblox', (req, res) => {
