@@ -1,14 +1,11 @@
--- In your Roblox HttpService script:
-while true do
-    local success, response = pcall(function()
-        return HttpService:GetAsync("https://middleman-88vv.onrender.com/poll", false, {
-            ["x-api-key"] = "25252525252525252525"
-        })
-    end)
-    
-    if success and response then
-        -- Process commands...
-    end
-    
-    task.wait(3) -- Polling every 3 seconds keeps HTTP budget healthy
-end
+{
+  "name": "middleman",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
